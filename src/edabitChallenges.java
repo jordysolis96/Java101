@@ -1,3 +1,4 @@
+import java.util.stream.IntStream;
 public class edabitChallenges {
     public static void main(String[] args) {
 
@@ -7,6 +8,22 @@ public class edabitChallenges {
     public static class SumOfTwoNumbers {
         public static int sum(int a, int b) {
             return a + b;
+        }
+    }
+
+
+//    You're given a string of words. You need to find the word "Nemo", and return a string like this: "I found Nemo at [the order of the word you find nemo]!".
+//    If you can't find Nemo, return "I can't find Nemo :(".
+    public static class Challenge {
+        public static String findNemo(String sentence) {
+            String[] words = sentence.split(" ");
+            int pos = 1 + IntStream.range(0, words.length)
+                    .filter(i -> words[i].equals("Nemo"))
+                    .findFirst()
+                    .orElse(-1);
+
+            return (pos > 0) ? String.format("I found Nemo at %d!", pos)
+                    : "I can't find Nemo :(";
         }
     }
 }
