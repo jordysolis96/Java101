@@ -1,4 +1,6 @@
 import java.util.stream.IntStream;
+import java.util.Arrays;
+
 public class edabitChallenges {
     public static void main(String[] args) {
 
@@ -24,6 +26,15 @@ public class edabitChallenges {
 
             return (pos > 0) ? String.format("I found Nemo at %d!", pos)
                     : "I can't find Nemo :(";
+        }
+    }
+
+//    Create a method that takes a string and returns a string with its letters in alphabetical order.
+    public class Program {
+        public String AlphabetSoup(String s) {
+            char[] chars = s.toCharArray();
+            Arrays.sort(chars);
+            return new String(chars);
         }
     }
 }
