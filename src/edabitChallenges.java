@@ -37,4 +37,16 @@ public class edabitChallenges {
             return new String(chars);
         }
     }
+
+//    Create a function that takes a string and returns the middle character(s). If the word's length is odd, return the middle character. If the word's length is even, return the middle two characters.
+static class middle {
+    public static String getMiddle(String word) {
+        int l = word.length();
+        if (l%2==0){
+            return word.substring(l/2-1,l/2+1);
+        } else {
+            return word.substring(l/2,l/2+1);
+        }
+    }
+}
 }
