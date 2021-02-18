@@ -60,4 +60,11 @@ public class edabitChallenges {
             }
         }
     }
+//    Write a function that removes any non-letters from a string, returning a well-known film title.
+public static class nonletters {
+    public static String lettersOnly(String str) {
+        return str.replaceAll("[^a-zA-Z]","");
+    }
+}
+
 }
