@@ -66,5 +66,19 @@ public static class nonletters {
         return str.replaceAll("[^a-zA-Z]","");
     }
 }
+//    Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+public static class Reverse {
+    public static String reverseCase(String str) {
+        String result = "";
 
+        for (char c : str.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                result += Character.toLowerCase(c);
+            } else {
+                result += Character.toUpperCase(c);
+            }
+        }
+        return result;
+    }
+}
 }
