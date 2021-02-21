@@ -1,5 +1,7 @@
 import java.util.stream.IntStream;
 import java.util.Arrays;
+import java.util.*;
+
 
 public class edabitChallenges {
     public static void main(String[] args) {
@@ -81,4 +83,24 @@ public static class Reverse {
         return result;
     }
 }
+//    Create a function that takes any non-negative number as an argument and return it with it's digits in descending order. Descending order is when you sort from highest to lowest.
+
+    public static class DescendingOrder {
+        public static int sortDesc(final int num) {
+
+            String s = "" + num;
+
+            char[] c = s.toCharArray();
+
+            Arrays.sort(c);
+
+            String str = "";
+
+            for(int k = c.length - 1; k >= 0; k--) {
+                str += c[k];
+            }
+
+            return Integer.parseInt(str);
+        }
+    }
 }
