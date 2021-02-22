@@ -103,4 +103,19 @@ public static class Reverse {
             return Integer.parseInt(str);
         }
     }
+//    Given a string, reverse all the words which have odd length. The even length words are not changed
+public static class OddReverse {
+    public static String reverseOdd(String str) {
+        String[] words = str.split(" ");
+        String result = "";
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].length() % 2 == 0)
+                result += words[i] + " ";
+            else {
+                result += new StringBuilder(words[i]).reverse() + " ";
+            }
+        }
+        return result.trim();
+    }
+}
 }
