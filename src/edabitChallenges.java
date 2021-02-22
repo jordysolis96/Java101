@@ -118,4 +118,10 @@ public static class OddReverse {
         return result.trim();
     }
 }
+//    Write a function that takes an integer minutes and converts it to seconds.
+public static class timeConversion {
+    public static int convert(int minutes) {
+        return minutes * 60;
+    }
+}
 }
