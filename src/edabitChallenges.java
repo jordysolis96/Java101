@@ -124,4 +124,11 @@ public static class timeConversion {
         return minutes * 60;
     }
 }
+//    Create a function that takes voltage and current and returns the calculated power.
+public static class Circuit {
+    public static int power(int voltage, int current) {
+        return voltage*current;
+    }
+}
+
 }
