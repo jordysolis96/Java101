@@ -142,4 +142,10 @@ public static class Triangle {
         public static int addition(int num) {
             return num + 1;
     }
+
+//Write a function that takes the base and height of a triangle and return its area.
+    public static int triArea(int base, int height) {
+        return base * height/2;
+
+    }
 }
