@@ -148,4 +148,26 @@ public static class Triangle {
         return base * height/2;
 
     }
+//    Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers
+        public static int calculator(int num1, char operator, int num2) {
+            if(operator == '+'){
+                return num1 + num2;
+            } else if(operator == '-'){
+                return num1 - num2;
+            } else if (operator == '/')
+            {
+                if (num2 == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return num1/num2;
+                }
+            }else if(operator == '*'){
+                return num1 * num2;
+            }else {
+                return num1;
+            }
+    }
 }
