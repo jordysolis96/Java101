@@ -172,7 +172,12 @@ public static class Triangle {
     }
 
 //    Create a method that takes an array of 10 integers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
-public static String formatPhoneNumber(int[] nums) {
-    return "(" + nums[0] + nums[1] + nums[2] + ")" + " " + nums[3] + nums[4] + nums[5] + "-" + nums[6] + nums[7] + nums[8] + nums[9];
-}
+    public static String formatPhoneNumber(int[] nums) {
+        return "(" + nums[0] + nums[1] + nums[2] + ")" + " " + nums[3] + nums[4] + nums[5] + "-" + nums[6] + nums[7] + nums[8] + nums[9];
+    }
+
+//    Create a function that takes a string and returns a string with spaces in between all of the characters
+    public static String spaceMeOut(String str) {
+        return str.replaceAll(""," ").trim();
+    }
 }
