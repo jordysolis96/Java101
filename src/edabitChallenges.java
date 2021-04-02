@@ -62,27 +62,29 @@ public class edabitChallenges {
             }
         }
     }
-//    Write a function that removes any non-letters from a string, returning a well-known film title.
-public static class nonletters {
-    public static String lettersOnly(String str) {
-        return str.replaceAll("[^a-zA-Z]","");
-    }
-}
-//    Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
-public static class Reverse {
-    public static String reverseCase(String str) {
-        String result = "";
 
-        for (char c : str.toCharArray()) {
-            if (Character.isUpperCase(c)) {
-                result += Character.toLowerCase(c);
-            } else {
-                result += Character.toUpperCase(c);
-            }
+    //    Write a function that removes any non-letters from a string, returning a well-known film title.
+    public static class nonletters {
+        public static String lettersOnly(String str) {
+            return str.replaceAll("[^a-zA-Z]", "");
         }
-        return result;
     }
-}
+
+    //    Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+    public static class Reverse {
+        public static String reverseCase(String str) {
+            String result = "";
+
+            for (char c : str.toCharArray()) {
+                if (Character.isUpperCase(c)) {
+                    result += Character.toLowerCase(c);
+                } else {
+                    result += Character.toUpperCase(c);
+                }
+            }
+            return result;
+        }
+    }
 //    Create a function that takes any non-negative number as an argument and return it with it's digits in descending order. Descending order is when you sort from highest to lowest.
 
     public static class DescendingOrder {
@@ -96,88 +98,93 @@ public static class Reverse {
 
             String str = "";
 
-            for(int k = c.length - 1; k >= 0; k--) {
+            for (int k = c.length - 1; k >= 0; k--) {
                 str += c[k];
             }
 
             return Integer.parseInt(str);
         }
     }
-//    Given a string, reverse all the words which have odd length. The even length words are not changed
-public static class OddReverse {
-    public static String reverseOdd(String str) {
-        String[] words = str.split(" ");
-        String result = "";
-        for (int i = 0; i < words.length; i++) {
-            if (words[i].length() % 2 == 0)
-                result += words[i] + " ";
-            else {
-                result += new StringBuilder(words[i]).reverse() + " ";
+
+    //    Given a string, reverse all the words which have odd length. The even length words are not changed
+    public static class OddReverse {
+        public static String reverseOdd(String str) {
+            String[] words = str.split(" ");
+            String result = "";
+            for (int i = 0; i < words.length; i++) {
+                if (words[i].length() % 2 == 0)
+                    result += words[i] + " ";
+                else {
+                    result += new StringBuilder(words[i]).reverse() + " ";
+                }
             }
+            return result.trim();
         }
-        return result.trim();
-    }
-}
-//    Write a function that takes an integer minutes and converts it to seconds.
-public static class timeConversion {
-    public static int convert(int minutes) {
-        return minutes * 60;
-    }
-}
-//    Create a function that takes voltage and current and returns the calculated power.
-public static class Circuit {
-    public static int power(int voltage, int current) {
-        return voltage*current;
-    }
-}
-
-//    Create a function that finds the maximum range of a triangle's third edge, where the side lengths are all integers.
-public static class Triangle {
-    public static int nextEdge(int side1, int side2) {
-        return (side1 + side2) - 1;
-    }
-}
-
-//    Create a function that takes a number as an argument, increments the number by +1 and returns the result.
-        public static int addition(int num) {
-            return num + 1;
     }
 
-//Write a function that takes the base and height of a triangle and return its area.
+    //    Write a function that takes an integer minutes and converts it to seconds.
+    public static class timeConversion {
+        public static int convert(int minutes) {
+            return minutes * 60;
+        }
+    }
+
+    //    Create a function that takes voltage and current and returns the calculated power.
+    public static class Circuit {
+        public static int power(int voltage, int current) {
+            return voltage * current;
+        }
+    }
+
+    //    Create a function that finds the maximum range of a triangle's third edge, where the side lengths are all integers.
+    public static class Triangle {
+        public static int nextEdge(int side1, int side2) {
+            return (side1 + side2) - 1;
+        }
+    }
+
+    //    Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+    public static int addition(int num) {
+        return num + 1;
+    }
+
+    //Write a function that takes the base and height of a triangle and return its area.
     public static int triArea(int base, int height) {
-        return base * height/2;
+        return base * height / 2;
 
     }
-//    Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers
-        public static int calculator(int num1, char operator, int num2) {
-            if(operator == '+'){
-                return num1 + num2;
-            } else if(operator == '-'){
-                return num1 - num2;
-            } else if (operator == '/')
-            {
-                if (num2 == 0)
-                {
-                    return 0;
-                }
-                else
-                {
-                    return num1/num2;
-                }
-            }else if(operator == '*'){
-                return num1 * num2;
-            }else {
-                return num1;
+
+    //    Create a function that takes two numbers and a mathematical operator + - / * and will perform a calculation with the given numbers
+    public static int calculator(int num1, char operator, int num2) {
+        if (operator == '+') {
+            return num1 + num2;
+        } else if (operator == '-') {
+            return num1 - num2;
+        } else if (operator == '/') {
+            if (num2 == 0) {
+                return 0;
+            } else {
+                return num1 / num2;
             }
+        } else if (operator == '*') {
+            return num1 * num2;
+        } else {
+            return num1;
+        }
     }
 
-//    Create a method that takes an array of 10 integers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
+    //    Create a method that takes an array of 10 integers (between 0 and 9) and returns a string of those numbers formatted as a phone number (e.g. (555) 555-5555).
     public static String formatPhoneNumber(int[] nums) {
         return "(" + nums[0] + nums[1] + nums[2] + ")" + " " + nums[3] + nums[4] + nums[5] + "-" + nums[6] + nums[7] + nums[8] + nums[9];
     }
 
-//    Create a function that takes a string and returns a string with spaces in between all of the characters
+    //    Create a function that takes a string and returns a string with spaces in between all of the characters
     public static String spaceMeOut(String str) {
-        return str.replaceAll(""," ").trim();
+        return str.replaceAll("", " ").trim();
+    }
+
+    //  Write a function that returns the string "something" joined with a space " " and the given argument a.
+    public static String giveMeSomething(String a) {
+        return "something " + a;
     }
 }
