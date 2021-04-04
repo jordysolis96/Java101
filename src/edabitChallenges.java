@@ -187,4 +187,9 @@ public class edabitChallenges {
     public static String giveMeSomething(String a) {
         return "something " + a;
     }
+
+//    Create a method that takes an integer as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+    public static boolean lessThanOrEqualToZero(int num) {
+        return num <= 0;
+    }
 }
