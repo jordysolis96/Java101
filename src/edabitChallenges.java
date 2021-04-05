@@ -192,4 +192,9 @@ public class edabitChallenges {
     public static boolean lessThanOrEqualToZero(int num) {
         return num <= 0;
     }
+//    Create a function that takes the age and return the age in days.
+    public static int calcAge(int age) {
+        return age * 365;
+    }
+
 }
