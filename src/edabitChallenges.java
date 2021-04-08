@@ -213,4 +213,9 @@ public class edabitChallenges {
     public static int footballPoints(int wins, int draws, int loses) {
         return wins*3 + draws;
     }
+//    Create a function that takes an array and returns the difference between the biggest and smallest numbers.
+    public static int differenceMaxMin(int[] arr) {
+        Arrays.sort(arr);
+        return arr[arr.length-1]-arr[0];
+    }
 }
