@@ -218,4 +218,12 @@ public class edabitChallenges {
         Arrays.sort(arr);
         return arr[arr.length-1]-arr[0];
     }
+//    Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+    public static boolean divisibleByFive(int num) {
+        if(num % 5 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
