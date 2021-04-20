@@ -255,4 +255,16 @@ public class edabitChallenges {
         }
     }
 
+//Create a function that takes three integer arguments (a, b, c) and returns the amount of integers which are of equal value.
+    public static int equal(int a, int b, int c) {
+        if(a == b && a == c){
+            return 3;
+        }else if(a != b && a == c){
+            return 2;
+        }else if(a != b && a != c){
+            return 0;
+        }else{
+            return 0;
+        }
+    }
 }
