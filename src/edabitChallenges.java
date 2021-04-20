@@ -246,4 +246,13 @@ public class edabitChallenges {
             return false;
         }
     }
+//    Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+    public static boolean divisibleByFour(int num) {
+        if(num == 0 / 4){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
