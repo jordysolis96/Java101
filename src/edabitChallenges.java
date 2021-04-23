@@ -267,4 +267,8 @@ public class edabitChallenges {
             return 0;
         }
     }
+//    Create a function that takes a name and returns a greeting in the form of a string
+    public static String helloName(String name) {
+        return "hello " + name + "!";
+    }
 }
