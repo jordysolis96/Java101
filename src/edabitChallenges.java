@@ -5,7 +5,7 @@ import java.util.*;
 
 public class edabitChallenges {
     public static void main(String[] args) {
-
+        System.out.println(hurdleJump(hurdleJump());
     }
 
     //    Create a method that takes two integers as arguments and return their sum.
@@ -283,5 +283,12 @@ public class edabitChallenges {
         String result = name + b;
         return result;
     }
-
+//A hurdler can clear a hurdle if their jump height is greater than or equal to the hurdle height.
+    public static boolean hurdleJump(int[] hurdles, int h) {
+        if(h >= hurdles.length){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
