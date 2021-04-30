@@ -305,4 +305,20 @@ public class edabitChallenges {
             return "none";
         }
     }
+//    Write a function that returns true if both numbers are:
+//
+//    Smaller than 0, OR ...
+//    Greater than 0, OR ...
+//    Exactly 0
+    public static boolean both(int n1, int n2) {
+        if(n1 > 0 && n2 > 0){
+            return true;
+        }else if(n1 < 0 && n2 < 0){
+            return true;
+        }else if(n1 == 0 && n2 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
