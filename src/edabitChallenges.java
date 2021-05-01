@@ -5,7 +5,7 @@ import java.util.*;
 
 public class edabitChallenges {
     public static void main(String[] args) {
-
+        System.out.println(both(2,3));
     }
 
     //    Create a method that takes two integers as arguments and return their sum.
