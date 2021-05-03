@@ -6,6 +6,7 @@ import java.util.*;
 public class edabitChallenges {
     public static void main(String[] args) {
         System.out.println(both(2,3));
+        System.out.println(isEmpty(""));
     }
 
     //    Create a method that takes two integers as arguments and return their sum.
@@ -316,6 +317,14 @@ public class edabitChallenges {
         }else if(n1 < 0 && n2 < 0){
             return true;
         }else if(n1 == 0 && n2 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+//    Create a function that returns true if a string is empty and false otherwise.
+    public static boolean isEmpty(String str) {
+        if(str.isEmpty()){
             return true;
         }else{
             return false;
