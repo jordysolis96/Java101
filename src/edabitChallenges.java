@@ -7,6 +7,7 @@ public class edabitChallenges {
     public static void main(String[] args) {
         System.out.println(both(2,3));
         System.out.println(isEmpty(""));
+        System.out.println(discount(1500, 50));
     }
 
     //    Create a method that takes two integers as arguments and return their sum.
@@ -329,5 +330,11 @@ public class edabitChallenges {
         }else{
             return false;
         }
+    }
+//    Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.
+    public static double discount(int price, int percentage) {
+        int dec = 1/percentage;
+        int dis = price / percentage;
+        return price * dis;
     }
 }
