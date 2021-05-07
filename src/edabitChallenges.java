@@ -8,6 +8,7 @@ public class edabitChallenges {
         System.out.println(both(2,3));
         System.out.println(isEmpty(""));
         System.out.println(discount(1500, 50));
+        System.out.println(equal(3, 7, 3));
     }
 
     //    Create a method that takes two integers as arguments and return their sum.
