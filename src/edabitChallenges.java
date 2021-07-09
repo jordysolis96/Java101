@@ -338,4 +338,20 @@ public class edabitChallenges {
         int dis = price / percentage;
         return price * dis;
     }
+
+//    Write a function that takes a credit card number and only displays the last four characters. The rest of the card number must be replaced by ************.
+    public static String cardHide(String card) {
+        if(card.length() < 4){
+            return card;
+        }else{
+            String hiddenCard = "";
+            for(int i = 0; i < card.length(); i++){
+                if(i >= 4){
+                    hiddenCard += "*";
+                }
+            }
+            hiddenCard += card.substring(card.length() - 4);
+            return hiddenCard;
+        }
+    }
 }
